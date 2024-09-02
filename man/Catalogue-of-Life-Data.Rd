@@ -11,12 +11,13 @@
 \format{
 Dataframes with the following columns:
 \describe{
-\item{Effort_Proxy}{Number of unique authors per year (including authors of synonym discoveries).}
-\item{Discovery_Times}{Number of unique discoveries per year (not counting synonyms).}
+\item{Author_Numbers}{Number of unique authors per year (including authors of synonym discoveries).}
+\item{Discovery_Numbers}{Number of unique discoveries per year (not counting synonyms).}
+The row names correspond to the years.
 }
 }
 \source{
-The Catalogue of Life: https://www.checklistbank.org/dataset/9910/download
+\href{https://www.checklistbank.org/dataset/9910/download}{The Catalogue of Life} (Retrieved August 2024).
 }
 \usage{
 Aves
@@ -28,11 +29,10 @@ Mammalia
 Nematoda
 }
 \description{
-Aves, Isopoda, Mammalia, and Nematoda contain the number of discivories and unique authors per year between 1758 and 2019. Data taken from the Catalogue of Life website on August 2024. Note that the number of authors are not quite accurate as we cannot distuingish multiple authors with the same name (among other issues).
+Aves, Isopoda, Mammalia, and Nematoda contain the number of discivories and unique authors per year between 1758 and 2019. Note that the number of authors are not fully accurate as we cannot distuingish multiple authors with the same name (among other issues).
 }
 \examples{
 data(Aves)
 head(Aves)
-
 }
 \keyword{datasets}

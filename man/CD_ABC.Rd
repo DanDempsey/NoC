@@ -62,13 +62,13 @@ This function fits a generative model of class discovery via Approximate Bayesia
 \examples{
 data( Aves )
 set.seed( 100 )
-pilot_run <- CD_ABC( 1e3, x = Aves$Effort_Proxy, t = Aves$Discovery_Times,
+pilot_run <- CD_ABC( 1e3, x = Aves$Author_Numbers, t = Aves$Discovery_Numbers,
                      theta_N = c(log(1e9), 1.1), theta_x = log(2),
                      theta_l = c(log(30), 0.08), m = 20 )
 
 thresh <- quantile( pilot_run$distance, 0.1 )
 
-actual_run <- CD_ABC( 1e4, x = Aves$Effort_Proxy, t = Aves$Discovery_Times,
+actual_run <- CD_ABC( 1e4, x = Aves$Author_Numbers, t = Aves$Discovery_Numbers,
                       theta_N = c(log(1e9), 1.1), theta_x = log(2),
                       theta_l = c(log(30), 0.08), m = 20, epsilon = thresh )
 

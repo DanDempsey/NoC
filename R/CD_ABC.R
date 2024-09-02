@@ -21,13 +21,13 @@
 #' @examples
 #' data( Aves )
 #' set.seed( 100 )
-#' pilot_run <- CD_ABC( 1e3, x = Aves$Effort_Proxy, t = Aves$Discovery_Times,
+#' pilot_run <- CD_ABC( 1e3, x = Aves$Author_Numbers, t = Aves$Discovery_Numbers,
 #'                      theta_N = c(log(1e9), 1.1), theta_x = log(2),
 #'                      theta_l = c(log(30), 0.08), m = 20 )
 #'
 #' thresh <- quantile( pilot_run$distance, 0.1 )
 #'
-#' actual_run <- CD_ABC( 1e4, x = Aves$Effort_Proxy, t = Aves$Discovery_Times,
+#' actual_run <- CD_ABC( 1e4, x = Aves$Author_Numbers, t = Aves$Discovery_Numbers,
 #'                       theta_N = c(log(1e9), 1.1), theta_x = log(2),
 #'                       theta_l = c(log(30), 0.08), m = 20, epsilon = thresh )
 #'
@@ -68,17 +68,6 @@ CD_ABC <- function( iters, x, t, theta_N, theta_x, theta_l, m = 10, metric = 'mi
   # Main run
   if ( cores > 1 ) {
     cl <- makeCluster( cores )
-    #full_run <- mclapply( 1:iters, R_ABC_Iteration, x = as.integer(x),
-    #                      t = as.integer(t), x_hat = as.integer(rep(0, Tau)),
-    #                      t_hat = as.integer(rep(0, Tau)),
-    #                      theta_N = as.double(theta_N), theta_x = as.double(theta_x),
-    #                      theta_l = as.double(theta_l), C_upper = as.integer(C_upper),
-    #                      C = as.integer(0), D = as.integer(D), Tau = as.integer(Tau),
-    #                      abundance_hyperprior = as.integer(abundance_hyperprior),
-    #                      epsilon = as.double(epsilon), distance = as.double(0),
-    #                      x_weight = as.double(x_weight), t_weight = as.double(t_weight),
-    #                      accept = as.integer(0), dist_met = as.integer(dist_met),
-    #                      p = as.double(p), mc.cores = cores )
     full_run <- parLapply( cl, X = 1:iters, fun = R_ABC_Iteration,
                            x = as.integer(x), t = as.integer(t), x_hat = as.integer(rep(0, Tau)),
                            t_hat = as.integer(rep(0, Tau)), theta_N = as.double(theta_N),
