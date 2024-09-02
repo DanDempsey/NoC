@@ -1,0 +1,17 @@
+Package: NoC
+Title: Estimates Number of Classes via ABC
+Version: 1.0.0
+Authors@R: 
+    c(person("Daniel", "Dempsey", , "dempsed6@tcd.ie", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0899-5412")),
+    person("Simon", "Wilson", , "swilson@tcd.ie", role = "ctb",
+           comment = c(ORCID = "0000-0003-0983-3052")))
+Maintainer: Daniel Dempsey <dempsed6@tcd.ie>
+Description: Contains a function to estimate the total number of classes of a kind given the discovery time of previous classes and some numeric proxy measure of effort. An example application is estimating the number of species of a certain kind of animal. Approximation is made by fitting the data to a generative model via ABC.
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports: magrittr, parallel
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10)
+LazyData: true
