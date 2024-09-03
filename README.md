@@ -169,3 +169,9 @@ lines( t )
 ```
 
 <img src="man/figures/README-plot_output-2.png" width="100%" />
+
+## Acknowledgments
+
+This package includes portions of code derived from the R source code.
+The original code is the work of the R Core Team and contributors to the
+R Project. Adaptations were made in accordance with the GPL-3 license.

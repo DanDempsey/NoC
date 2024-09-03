@@ -5,7 +5,8 @@ Authors@R:
     c(person("Daniel", "Dempsey", , "dempsed6@tcd.ie", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-0899-5412")),
     person("Simon", "Wilson", , "swilson@tcd.ie", role = "ctb",
-           comment = c(ORCID = "0000-0003-0983-3052")))
+           comment = c(ORCID = "0000-0003-0983-3052")),
+    person("R Core Team", role = "ctb", comment = "The revsort function was derived from R source code"))
 Maintainer: Daniel Dempsey <dempsed6@tcd.ie>
 Description: Contains a function to estimate the total number of classes of a kind given the discovery time of previous classes and some numeric proxy measure of effort. An example application is estimating the number of species of a certain kind of animal. Approximation is made by fitting the data to a generative model via ABC.
 License: GPL-3
