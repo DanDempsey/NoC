@@ -12,10 +12,11 @@
 #'
 #' @name Catalogue of Life Data
 #' @aliases Aves Isopoda Mammalia Nematoda
-#' @usage Aves
-#' @usage Isopoda
-#' @usage Mammalia
-#' @usage Nematoda
+#' @usage
+#' Aves
+#' Isopoda
+#' Mammalia
+#' Nematoda
 #' @examples
 #' data(Aves)
 #' head(Aves)
