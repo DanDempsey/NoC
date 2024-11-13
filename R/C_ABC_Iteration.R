@@ -1,6 +1,3 @@
-#' @keywords internal
-#' @useDynLib NoC, .registration = TRUE
-
 R_ABC_Iteration <- function( iter, x, t, x_hat, t_hat, theta_x, theta_l, theta_N,
                              D, C_upper, C, Tau, abundance_hyperprior, epsilon, distance,
                              x_weight, t_weight, accept, dist_met, p ) {
