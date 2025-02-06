@@ -20,7 +20,7 @@ License: \tab GPL (>=3)\cr
 }
 
 \author{
-Daniel Dempsey <\email{daniel.dempsey0@gmail.com}>, with contributions and supervision by Simon Wilson <\email{swilson@tcd.ie}>
+Daniel Dempsey <\email{daniel.dempsey0@gmail.com}>, under the supervision of Simon Wilson <\email{swilson@tcd.ie}>
 }
 
 \references{

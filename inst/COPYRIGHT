@@ -1,9 +1,7 @@
 This package includes code derived from R source code.
 
-The derived code is adapted from the revsort function in the sort.c file and is subject to the same license as R itself (GPL-3).
-Link to original code here: https://github.com/wch/r-source/blob/7936ff8b298c76bdcbb78c2480def0b4cd502276/src/main/sort.c
+The derived code is adapted from the revsort function in the sort.c file and is subject to the same license as R itself (GPL-3). Link to original code here: https://github.com/wch/r-source/blob/7936ff8b298c76bdcbb78c2480def0b4cd502276/src/main/sort.c
 
-Original authorship of the derived code belongs to the R Core Team 
-and contributors to the R Project.
+Original authorship of the derived code belongs to the R Core Team and contributors to the R Project.
 
 All additional contributions are licensed under the GPL-3 license.
